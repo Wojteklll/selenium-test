@@ -103,6 +103,8 @@ class Test(TestCase):
 
             films_filter.click()
 
+            time.sleep(2)
+
             games_filter = WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.XPATH, "//input[@value='Gry']"))
             )
